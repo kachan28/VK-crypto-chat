@@ -1,0 +1,27 @@
+﻿<Window x:Class="VKMesGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VKMesGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280" Background="#597da3">
+    <Grid>
+        <TextBlock Text="Test" Margin="385,102,424,498" FontSize="60" Name="Test"/>
+        <PasswordBox Name="Password" Margin="350, 500, 350, 150" FontSize="20" />
+        <TextBox Margin="350, 400, 350, 250" FontSize="20" FontFamily="Verdana" Name="Username">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button Name="Sign_in" Margin="530, 600, 530, 50" Click="Button_Clicked">
+            <Button.Content>
+                <TextBlock FontSize="22" FontFamily="Verdana">
+                    Sing in
+                </TextBlock>
+            </Button.Content>
+        </Button>
+    </Grid>
+</Window>
